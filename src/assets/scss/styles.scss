@@ -15,14 +15,14 @@ $hello-color: #647787;
 
 body {
   font-family: $font-family;
-  background-color: #f7f8fa;
+  background-color: #F7F8FA;
 }
 a.navbar-brand {
   font-family: $font-family-roboto;
   font-weight: bolder;
   color: $logo-color !important;
   font-size: 24px;
-  margin-right: 100px;
+  margin-right: 180px;
 }
 .navbar {
   padding: 0.5rem 3rem;
@@ -84,4 +84,47 @@ input:active {
 }
 .search-icon {
   display: inline;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  padding: 130px 0 0;
+  background-color: #fff;
+}
+a.g-invoice {
+  color: #fff;
+  background-color: #27ae60;
+  font-family: $font-family-roboto;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  padding: 10px 20px;
+  margin-left: 64px;
+  border-radius: 30px;
+  font-size: 12px;
+  cursor: pointer;
+  &:hover {
+    color:#fff;
+    background-color: #57ae60;
+  }
+}
+.dashboard-main {
+  padding: 40px 45px;
+}
+.border-red {
+  border: 1px solid #f00;
+}
+.summary-item-tab {
+  background-color: #fff;
+  padding: 15px;
+}
+.transaction-title {
+  font-size: 14px;
+  color: #787C90;
+}
+.transaction-value {
+  font-size: 20px;
+  color: #262626;
 }

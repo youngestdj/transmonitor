@@ -1,0 +1,13 @@
+import React from "react";
+import { Col, Row } from "react-bootstrap";
+import TrasactionSummaryRow from "./TransactionSummaryRow";
+
+const DashboardMain = () => (
+  <>
+    <Col lg={{ span: 10, offset: 2 }} className="border-red dashboard-main">
+      <TrasactionSummaryRow />
+    </Col>
+  </>
+);
+
+export default DashboardMain;
