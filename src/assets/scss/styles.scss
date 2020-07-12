@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap");
+@import "~bootstrap/scss/bootstrap";
+
+@font-face {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Segoe-UI.ttf") format("opentype");
+}
+
+$font-family-roboto: "Roboto", sans-serif;
+$font-family: "Segoe UI", sans-serif;
+$logo-color: #1875f0;
+$hello-color: #647787;
+
+body {
+  font-family: $font-family;
+  background-color: #f7f8fa;
+}
+a.navbar-brand {
+  font-family: $font-family-roboto;
+  font-weight: bolder;
+  color: $logo-color !important;
+  font-size: 24px;
+  margin-right: 100px;
+}
+.navbar {
+  padding: 0.5rem 3rem;
+  background-color: #fff;
+}
+.navbar-text {
+  text-align: right;
+  margin-bottom: 15px;
+  padding-right: 2em;
+}
+.hello {
+  font-size: 10px;
+  display: block;
+  color: $hello-color;
+}
+.nav-link {
+  color: #647787 !important;
+  padding-right: 2em !important;
+}
+.navbar {
+  box-shadow: 0 4px 10px rgba(79, 79, 79, 0.1);
+}
+.icon {
+  padding-bottom: 15px;
+}
+a.notif {
+  position: relative;
+  display: block;
+  height: 18px;
+  width: 18px;
+  background: url("../images/bell-53.png");
+  background-size: contain;
+  text-decoration: none;
+  padding-left: 0.5rem;
+  margin-right: 2em;
+  margin-top: 13px;
+}
+.num {
+  position: absolute;
+  right: -3px;
+  top: -6px;
+  color: #fff;
+  background-color: $logo-color;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
+  text-align: center;
+}
+.search-no-border {
+  border: 0;
+  width: 400px !important;
+}
+input:focus,
+input:active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+.search-icon {
+  display: inline;
+}
