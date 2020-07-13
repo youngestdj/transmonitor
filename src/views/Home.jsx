@@ -8,10 +8,14 @@ import DashboardMain from "../components/DashbaordMain";
 const Home = () => (
   <>
     <Header />
-    <Sidebar />
     <Container fluid>
       <Row>
-        <DashboardMain />
+        <Sidebar />
+        <Container fluid>
+          <Row>
+            <DashboardMain />
+          </Row>
+        </Container>
       </Row>
     </Container>
   </>

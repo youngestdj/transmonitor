@@ -15,7 +15,7 @@ $hello-color: #647787;
 
 body {
   font-family: $font-family;
-  background-color: #F7F8FA;
+  background-color: #f7f8fa;
 }
 a.navbar-brand {
   font-family: $font-family-roboto;
@@ -27,6 +27,7 @@ a.navbar-brand {
 .navbar {
   padding: 0.5rem 3rem;
   background-color: #fff;
+  z-index: 5;
 }
 .navbar-text {
   text-align: right;
@@ -90,23 +91,48 @@ input:active {
   top: 0;
   bottom: 0;
   left: 0;
-  z-index: -1;
+  z-index: 1;
   padding: 130px 0 0;
   background-color: #fff;
+  font-size: 13px;
+  color: #647787;
+  .nav {
+    margin-top: 30px;
+  }
+  .nav-item {
+    width: 100%;
+    display: block;
+    padding: 10px 48px !important;
+  }
+  .nav-link {
+    padding: 0;
+    display: inline;
+    margin-left: 15px;
+  }
+  .active {
+    background-color: rgba(24, 117, 240, 0.1);
+    border-left: 5px solid #1875f0;
+  }
+  h6 {
+    margin: 20px 0 0;
+    padding: 0;
+    font-size: 13px;
+  }
 }
-a.g-invoice {
+.g-invoice {
   color: #fff;
-  background-color: #27ae60;
+  background-color: #27ae60 !important;
   font-family: $font-family-roboto;
   font-weight: bold;
-  letter-spacing: 0.2px;
-  padding: 10px 20px;
-  margin-left: 64px;
+  letter-spacing: 1px;
+  padding: 10px 25px;
+  margin-left: 44px;
   border-radius: 30px;
+  border: none;
   font-size: 12px;
   cursor: pointer;
   &:hover {
-    color:#fff;
+    color: #fff;
     background-color: #57ae60;
   }
 }
@@ -122,7 +148,7 @@ a.g-invoice {
 }
 .transaction-title {
   font-size: 14px;
-  color: #787C90;
+  color: #787c90;
 }
 .transaction-value {
   font-size: 20px;

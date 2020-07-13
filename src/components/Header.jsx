@@ -5,12 +5,12 @@ import Notifications from "./Notification";
 import NavSearch from "./NavSearch";
 
 const Header = () => (
-  <Navbar>
+  <Navbar collapseOnSelect expand="lg">
     <Navbar.Brand href="#home">TransMonitor</Navbar.Brand>
-    <Navbar.Toggle />
-    <NavSearch />
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse className="justify-content-end">
-      <Nav className="mr-sm-1">
+     <NavSearch />
+     <Nav className="mr-sm-1">
         <Nav.Link href="#home">Support</Nav.Link>
         <Nav.Link href="#link">FAQ</Nav.Link>
         <Notifications />
