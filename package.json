@@ -11,7 +11,7 @@
     "start-dev": "webpack-dev-server --env.mode development --open --hot",
     "preinstall": "rm -rf dist",
     "postinstall": "npm run build-prod",
-    "build": "npm run preinstall && npm install && npm run postinstall && npm run build-prod && npm start"
+    "build": "npm run build-prod"
   },
   "repository": {
     "type": "git",
