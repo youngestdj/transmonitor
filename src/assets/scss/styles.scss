@@ -73,10 +73,19 @@ a.notif {
   font-size: 10px;
   text-align: center;
 }
-.search-no-border {
+.search-no-border, .search-bottom-border {
   border: 0;
   width: 400px !important;
 }
+.search-bottom-border {
+  border-bottom: 2px solid #787878;
+  background-color: transparent;
+  border-radius: 0;
+  &:focus {
+    background-color: transparent;
+  }
+}
+
 input:focus,
 input:active {
   outline: 0px !important;
@@ -102,7 +111,7 @@ input:active {
   .nav-item {
     width: 100%;
     display: block;
-    padding: 10px 48px !important;
+    padding: 10px 0 10px 48px;
   }
   .nav-link {
     padding: 0;
@@ -139,6 +148,42 @@ input:active {
 .dashboard-main {
   padding: 40px 45px;
 }
+.dashboard-chart-section {
+  padding: 0 33px;
+  font-size: 12px;
+  .date {
+    color: #4f4f4f;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  img {
+    padding-right: 5px;
+  }
+
+}
+.payments-section {
+  padding: 0 33px;
+  font-size: 15px;
+  table {
+    background-color: #fff;
+    font-size: 15px;
+    color: #7F8FA4;
+    th {
+      padding: 30px;
+    }
+  }
+  .item-name {
+    color: #414042;
+  }
+  .circle {
+    width: 50px;
+    height: 50%;
+    border-radius: 50%;
+    background-color:#7F8FA4;
+    color: #fff;
+    padding: 10px;
+  }
+}
 .border-red {
   border: 1px solid #f00;
 }
@@ -153,4 +198,61 @@ input:active {
 .transaction-value {
   font-size: 20px;
   color: #262626;
+}
+.dashboard-orders, .dashboard-chart {
+  background-color: #fff;
+  padding: 30px;
+  font-size: 15px;
+  line-height: 2em;
+  h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: bolder;
+    color: #262626;
+  }
+}
+progress {
+  background-color: #FDC203;
+  border: 0;
+  height: 7px;
+  width: 90%;
+}
+progress::-webkit-progress-bar {
+  background-color: #27AE60;
+  border: 0;
+  height: 7px;
+  width: 90%;
+}
+progress::-webkit-progress-value {
+  background-color: #27AE60;
+  border: 0;
+  height: 7px;
+  width: 90%;
+}
+progress::-moz-progress-bar {
+  background-color: #27AE60;
+  border: 0;
+  height: 7px;
+  width: 90%;
+}
+.yellow, .pending {
+  color: #FDC203;
+}
+.green, .reconciled {
+  color: #27AE60;
+}
+.blue {
+  color: #1860EC;
+}
+.yellow, .green, .blue {
+  font-weight: bold;
+}
+.un-reconciled {
+  color: #7F8FA4;
+}
+.status-border {
+  border: 1px solid #CCCFD4;
+  border-radius: 30px;
+  padding: 6px 20px;
+  width: 80%;
 }

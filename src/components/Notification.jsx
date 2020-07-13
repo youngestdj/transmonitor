@@ -1,5 +1,4 @@
 import React from "react";
-import bell from "../assets/images/bell-53.png";
 
 const Notifications = () => (
   <a href="" className="notif">

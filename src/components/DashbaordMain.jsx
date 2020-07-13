@@ -4,7 +4,7 @@ import TrasactionSummaryRow from "./TransactionSummaryRow";
 
 const DashboardMain = () => (
   <>
-    <Col lg={{ span: 10, offset: 2 }} className="border-red dashboard-main">
+    <Col lg={{ span: 10, offset: 2 }} className="dashboard-main">
       <TrasactionSummaryRow />
     </Col>
   </>
