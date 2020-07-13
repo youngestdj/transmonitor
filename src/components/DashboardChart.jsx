@@ -1,6 +1,5 @@
 import React from "react";
 import { Col, Row, Container } from "react-bootstrap";
-import TrasactionSummaryRow from "./TransactionSummaryRow";
 import left from "../assets/images/left.png";
 import right from "../assets/images/right.png";
 import GraphLarge from "./GraphLarge";
@@ -24,7 +23,7 @@ const DashboardChart = () => (
           </Col>
         </Row>
         <Row>
-          <Col lg={12}>
+          <Col md={12}>
             <GraphLarge />
           </Col>
         </Row>

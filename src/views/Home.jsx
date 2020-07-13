@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-bind */
 import React from "react";
 import Header from "../components/Header";
 import { Row, Col, Container } from "react-bootstrap";
@@ -8,7 +7,6 @@ import DashboardChart from "../components/DashboardChart";
 import DashboardOrders from "../components/DashboardOrders";
 import DashboardPayments from "../components/DashboardPayments";
 import Payments from "../components/Payments";
-import GraphMini from "../components/GraphMini";
 
 
 const Home = () => (

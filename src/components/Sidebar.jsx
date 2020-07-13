@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row, Button, Nav } from "react-bootstrap";
+import { Col, Button, Nav } from "react-bootstrap";
 import overview from "../assets/images/overview.png";
 import payments from "../assets/images/wallet-43.png";
 import rpayments from "../assets/images/rpayments.png";
