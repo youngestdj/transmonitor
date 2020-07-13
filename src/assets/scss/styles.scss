@@ -12,6 +12,7 @@ $font-family-roboto: "Roboto", sans-serif;
 $font-family: "Segoe UI", sans-serif;
 $logo-color: #1875f0;
 $hello-color: #647787;
+$white: #fff;
 
 body {
   font-family: $font-family;
@@ -26,7 +27,7 @@ a.navbar-brand {
 }
 .navbar {
   padding: 0.5rem 3rem;
-  background-color: #fff;
+  background-color: $white;
   z-index: 5;
 }
 .navbar-text {
@@ -65,7 +66,7 @@ a.notif {
   position: absolute;
   right: -3px;
   top: -6px;
-  color: #fff;
+  color: $white;
   background-color: $logo-color;
   border-radius: 50%;
   width: 15px;
@@ -102,7 +103,7 @@ input:active {
   left: 0;
   z-index: 1;
   padding: 130px 0 0;
-  background-color: #fff;
+  background-color: $white;
   font-size: 13px;
   color: #647787;
   .nav {
@@ -129,7 +130,7 @@ input:active {
   }
 }
 .g-invoice {
-  color: #fff;
+  color: $white;
   background-color: #27ae60 !important;
   font-family: $font-family-roboto;
   font-weight: bold;
@@ -141,7 +142,7 @@ input:active {
   font-size: 12px;
   cursor: pointer;
   &:hover {
-    color: #fff;
+    color: $white;
     background-color: #57ae60;
   }
 }
@@ -165,7 +166,7 @@ input:active {
   padding: 0 33px;
   font-size: 15px;
   table {
-    background-color: #fff;
+    background-color: $white;
     font-size: 15px;
     color: #7F8FA4;
     th {
@@ -180,7 +181,7 @@ input:active {
     height: 50%;
     border-radius: 50%;
     background-color:#7F8FA4;
-    color: #fff;
+    color: $white;
     padding: 10px;
   }
 }
@@ -188,7 +189,7 @@ input:active {
   border: 1px solid #f00;
 }
 .summary-item-tab {
-  background-color: #fff;
+  background-color: $white;
   padding: 15px;
 }
 .transaction-title {
@@ -200,7 +201,7 @@ input:active {
   color: #262626;
 }
 .dashboard-orders, .dashboard-chart {
-  background-color: #fff;
+  background-color: $white;
   padding: 30px;
   font-size: 15px;
   line-height: 2em;

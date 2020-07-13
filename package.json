@@ -10,7 +10,8 @@
     "build-prod": "webpack --mode production",
     "start-dev": "webpack-dev-server --env.mode development --open --hot",
     "preinstall": "rm -rf dist",
-    "postinstall": "npm run build-prod"
+    "postinstall": "npm run build-prod",
+    "build": "npm run preinstall && npm install && npm run postinstall && npm run build-prod && npm start"
   },
   "repository": {
     "type": "git",
